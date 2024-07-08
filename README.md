@@ -4,20 +4,13 @@ This repo shows how to create a Chatbot over your documents using LangChain and 
 Importantly, this has an emphasis on using some of the lower level components of LangChain rather than a predefined chain.
 
 This also uses:
-- Cohere for embeddings
-- ChromaDB for a vectorstore
-- OpenAI for a text generation model
+- OLLAMA for embeddings
+- FaissDB for a vectorstore
+- Ollama Mistral for a text generation model
 
 ## Setup
 
 To setup, please install requirements with `pip install -r requirements.txt`
-
-Then, set various environment variables:
-
-```shell
-export OPENAI_API_KEY=...
-export COHERE_API_KEY=
-```
 
 ## Ingest
 
@@ -32,3 +25,6 @@ Now we can chat with this data! In order to do that, run `python app.py`.
 This will spin up a Gradio application that you can chat with in the frontend.
 For details on how to customize the chatbot, see the code in `app.py`.
 The code in `app.py` should be well commented so you can understand what is going on.
+
+ ##UI
+ (https://github.com/Ayush866/Chat_with_Document/assets/110453272/fe630696-de2e-4456-9267-ba05032bbb13)
